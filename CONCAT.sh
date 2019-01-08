@@ -11,7 +11,7 @@ perl -pe '/^>/ ? print "\n" : chomp' ${!fasta_file}_1 > ${!fasta_file}_12
 sed -e '1i\>Concatanate_sequence' ${!fasta_file}_12 > ${!fasta_file}_concatanate.fasta
 rm -f ${!fasta_file}_1 ${!fasta_file}_12
 
-echo "Your concatanated fasta sequence in the file names "
+echo "Your concatanated fasta sequence is in the file named below "
 echo "================================="
 echo "${!fasta_file}_concatanate.fasta"
 echo "================================="
