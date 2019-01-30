@@ -7,12 +7,12 @@ if [ "$#" -gt 0 ]; then
 	filename=$1
 else
     clear
-    echo "Input your multifasta file name"
+    echo "Input your multifasta file name: "
     read filename
 fi
 fasta_file=filename
 clear
-echo "Input your name of fasta header (without >)"
+echo "Input your name of fasta header (without >): "
 read header
 header_name=header
 grep -v '^>' ${!fasta_file} > ${!fasta_file}_1
