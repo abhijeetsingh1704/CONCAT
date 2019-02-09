@@ -4,4 +4,4 @@ this program takes multifasta file as input and gives a concatenated sequence as
 
 # Usage
 
-bash CONCAT.sh inputfile
+> bash CONCAT.sh inputfile
